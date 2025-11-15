@@ -31,15 +31,12 @@
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="cadastroCliente.html">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-laugh-wink"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">Dashboard final <sup>2</sup></div>
+                <div class="sidebar-brand-text mx-3">Final</div>
             </a>
-
-            <!-- Divider -->
-            <hr class="sidebar-divider my-0">
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
@@ -48,18 +45,41 @@
                     <span>Dashboard</span></a>
             </li>
 
-            <!-- Nav Item - Charts -->
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+
             <li class="nav-item">
-                <a class="nav-link" href="charts.html">
-                    <i class="fas fa-fw fa-chart-area"></i>
-                    <span>Produtos</span></a>
+                <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseproduto" aria-expanded="true"
+                    aria-controls="collapseTwo">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>Produtos</span>
+                </a>
+                <div id="collapseproduto" class="collapse" aria-labelledby="headingproduto"
+                    data-parent="#accordionSidebar" style="">
+                    <div class="bg-white py-2 collapse-inner rounded">
+
+                        <a class="collapse-item" href="pesquisa-produto.html">Pesquisa produto</a>
+                        <a class="collapse-item" href="cadastro-produto.html">Novo produto</a>
+                    </div>
+                </div>
             </li>
 
-            <!-- Nav Item - Tables -->
+
             <li class="nav-item">
-                <a class="nav-link" href="tables.html">
-                    <i class="fas fa-fw fa-table"></i>
-                    <span>Clientes</span></a>
+                <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapsecliente" aria-expanded="true"
+                    aria-controls="collapseTwo">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>Clientes</span>
+                </a>
+                <div id="collapsecliente" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar"
+                    style="">
+                    <div class="bg-white py-2 collapse-inner rounded">
+
+                        <a class="collapse-item" href="pesquisa-cliente.html">Pesquisa clientes</a>
+                        <a class="collapse-item" href="cadastro-cliente.html">Novo cliente</a>
+                    </div>
+                </div>
             </li>
 
             <!-- Divider -->
@@ -89,14 +109,15 @@
 
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">
+
                         <div class="topbar-divider d-none d-sm-block"></div>
+
                         <!-- Nav Item - User Information -->
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Matheus Gasparetto</span>
-                                <img class="img-profile rounded-circle"
-                                    src="img/undraw_profile.svg">
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Fernando Belini</span>
+                                <img class="img-profile rounded-circle" src="img/undraw_profile.svg">
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
@@ -126,7 +147,29 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-4 text-gray-800">Cadastro cliente</h1>
+                    <h1 class="h3 mb-4 text-gray-800">Novo Produto</h1>
+                    <form class="user">
+                        <div class="form-group row">
+                            <div class="col-sm-12 mb-3 mb-sm-0">
+                                <input type="text" class="form-control form-control-user" id="exampleFirstName"
+                                    placeholder="Descrição do produto">
+                            </div>
+
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control form-control-user" id="exampleInputEmail"
+                                placeholder="Marca">
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-sm-6 mb-3 mb-sm-0">
+                                <input type="text" class="form-control form-control-user" id="exampleFirstName"
+                                    placeholder="Valor">
+                            </div>
+                            <hr>
+                            <button class="btn btn-primary btn-user btn-block">
+                                Salvar
+                    </form>
 
                 </div>
                 <!-- /.container-fluid -->
@@ -138,7 +181,7 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2025</span>
+                        <span>Copyright &copy; Final 2025</span>
                     </div>
                 </div>
             </footer>
@@ -166,7 +209,7 @@
                         <span aria-hidden="true">×</span>
                     </button>
                 </div>
-                <div class="modal-body">Selecionar o logout você vai encerrar a sessão ativa</div>
+                <div class="modal-body">Ao selecionar o logout você vai encerrar a sessão ativa.</div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
                     <a class="btn btn-primary" href="login.html">Sair</a>
